@@ -2,11 +2,14 @@
 
 int main()
 {
-	int Number1 = 0, Number2 = 0;
+	int Sum = 0, Value = 0;
 
-	std::cout << "Enter two numbers: " << std::endl;
-	std::cin >> Number1 >> Number2;
-	std::cout << "The sum of " << Number1 << " and " << Number2 << " is " << Number1 + Number2 << std::endl;
+	while (std::cin >> Value)
+	{
+		Sum += Value;
+	}
+
+	std::cout << "The sum is: " << Sum << std::endl;
 
 	return 0;
 }
